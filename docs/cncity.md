@@ -436,28 +436,7 @@
 
 |台湾省|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/710000.txt|
 |---|---|
-|新北市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/710100.txt|
-|高雄市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/710200.txt|
-|台中市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/710300.txt|
-|台北市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/710400.txt|
-|桃园市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/710500.txt|
-|台南市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/710600.txt|
-|彰化县|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/710700.txt|
-|屏东县|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/710800.txt|
-|云林县|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/710900.txt|
-|苗栗县|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/711000.txt|
-|新竹县|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/711100.txt|
-|嘉义县|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/711200.txt|
-|南投县|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/711300.txt|
-|宜兰县|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/711400.txt|
-|新竹市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/711500.txt|
-|基隆市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/711600.txt|
-|花莲县|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/711700.txt|
-|嘉义市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/711800.txt|
-|台东县|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/711900.txt|
-|金门县|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/712000.txt|
-|澎湖县|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/712100.txt|
-|连江县|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/712200.txt|
+|暂无细分|无|
 
 |香港特别行政区|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/810000.txt|
 |---|---|

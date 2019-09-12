@@ -60,14 +60,6 @@
 |广东省佛山市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/440600.txt|
 ||[ > 查看更多](https://github.com/metowolf/iplist/tree/master/docs/cncity.md)|
 
-### Anycast IP 段
-
-数据由纯真数据库、全球路由表、APNIC 综合分析整理而成，CIDR 段不作合并处理，不定期更新
-
-|IDC|CIDR|
-|---|---|
-|Anycast|https://raw.githubusercontent.com/metowolf/iplist/master/data/special/anycast.txt|
-
 
 ## 数据来源
 
@@ -75,7 +67,6 @@
 |---|---|---|---|
 |纯真数据库|qqwry.ipdb|20190910|916481|
 |纯真数据库|qqwry.raw.ipdb|20190910|1080019|
-|MaxMind|GeoLite2-City.mmdb|20190625|3759530|
 
 
 ## 致谢
@@ -91,4 +82,4 @@
 
 ## 说明
 
-根据 IPIP.net 用户协议规定，[IP2](https://github.com/metowolf/IP2)、[ipdb](https://github.com/metowolf/ipdb)、[ipdb-range](https://github.com/metowolf/ipdb-range) 代码中涉及对 IP CIDR “加密数据”的解析，因此不作开源处理。
+根据 IPIP.net 用户协议规定，[IP2](https://github.com/metowolf/IP2)、[ipdb](https://github.com/metowolf/ipdb)、[ipdb-range](https://github.com/metowolf/ipdb-range) 代码中涉及对 IP CIDR 数据的解析，因此不作开源处理。
