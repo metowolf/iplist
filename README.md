@@ -6,7 +6,7 @@
 
 <h1 align="center">IP 地址库</h1>
 
-<p align="center">数据基于纯真数据库分类，更新日期 20190915.</p>
+<p align="center">数据基于纯真数据库分类，更新日期 20190920.</p>
 
 <p align=center>
 <a href="https://i-meto.com/">Author Website</a> ·
@@ -65,8 +65,8 @@
 
 |采信源|文件|版本|条目|
 |---|---|---|---|
-|纯真数据库|[qqwry.ipdb](https://github.com/metowolf/qqwry.ipdb)|20190915|934639|
-|纯真数据库|[qqwry.raw.ipdb](https://github.com/metowolf/qqwry.ipdb)|20190915|1080459|
+|纯真数据库|[qqwry.ipdb](https://github.com/metowolf/qqwry.ipdb)|20190920|935807|
+|纯真数据库|[qqwry.raw.ipdb](https://github.com/metowolf/qqwry.ipdb)|20190920|1078934|
 
 
 ## 数据准确性
