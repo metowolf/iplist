@@ -6,7 +6,7 @@
 
 <h1 align="center">IP 地址库</h1>
 
-<p align="center">数据基于纯真数据库分类，更新日期 20191210.</p>
+<p align="center">数据基于纯真数据库分类，更新日期 20200505.</p>
 
 <p align=center>
 <a href="https://i-meto.com/">Author Website</a> ·
@@ -65,7 +65,7 @@
 
 |采信源|文件|版本|条目|
 |---|---|---|---|
-|纯真数据库|[qqwry.ipdb](https://github.com/metowolf/qqwry.ipdb)|20191210|936767|
+|纯真数据库|[qqwry.ipdb.tgz](https://registry.npmjs.org/qqwry.ipdb/-/qqwry.ipdb-2020.5.5.tgz)|20200505|930702|
 
 
 ## 数据准确性
@@ -75,7 +75,7 @@
 
  1. 直接向本项目 [发起 issue](https://github.com/metowolf/iplist/issues/new)，按照规范注明需要修改的 IP 范围、正确信息，如有信息来源建议一并填写，我会代为排查并向上游反馈。
  2. 如果发现是 [qqwry.ipdb](https://github.com/metowolf/qqwry.ipdb) 不幸错误格式化了原始信息，请前往 [qqwry.ipdb issue](https://github.com/metowolf/qqwry.ipdb/issues/new) 进行反馈。
- 3. 如果发现是纯真数据库的数据错误，可以 [前往纯真论坛](http://bbs.cz88.net/f26)，按照格式要求进行发帖反馈。
+ 3. 如果发现是纯真数据库的数据错误，可以通过 [IP 小秘书](http://www.cz88.net/ip/) 或者 [前往纯真论坛](http://bbs.cz88.net/f26)，按照格式要求进行发帖反馈。
 
 
 ## 致谢
