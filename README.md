@@ -6,7 +6,7 @@
 
 <h1 align="center">IP 地址库</h1>
 
-<p align="center">数据基于纯真数据库分类，更新日期 2021.3.31.</p>
+<p align="center">数据基于纯真数据库分类，更新日期 2021.05.06</p>
 
 <p align=center>
 <a href="https://i-meto.com/">Author Website</a> ·
@@ -63,9 +63,10 @@
 
 ## 数据来源
 
-|采信源|文件|版本|
-|---|---|---|
-|纯真数据库|[qqwry.ipdb.tgz](https://registry.npmjs.org/qqwry.ipdb/-/qqwry.ipdb-2021.3.31.tgz)|2021.3.31|
+|采信源|文件|
+|---|---|
+|纯真数据库|[qqwry.ipdb](https://github.com/metowolf/qqwry.ipdb)|
+|OpenIPDB 字典|-|
 
 
 ## 数据准确性
@@ -85,7 +86,5 @@
  - 感谢 [IPIP.net](https://www.ipip.net/) 设计的 ipdb 数据库格式
  - 感谢 ipdb 项目提供 ipdb 数据库格式的读取工具
  - 感谢 @ipdb/range 项目提供 ipdb 数据库格式的分段工具
- - 感谢 @ipdb/cac 项目提供中国行政区划分类工具
- - 感谢 @ipdb/iso3166 项目提供国家、地区标准代码分类工具
  - 感谢 [cidr-tools](https://github.com/silverwind/cidr-tools) 项目提供可靠的 CIDR 合并工具
  - 感谢专注于 IP 数据库收集整理工作的公司和热心网友们
