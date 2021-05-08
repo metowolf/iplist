@@ -436,7 +436,28 @@
 
 |台湾省|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/710000.txt|
 |---|---|
-|暂无细分|无|
+|新北市|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-NWT.txt|
+|高雄市|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-KHH.txt|
+|台中市|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-TXG.txt|
+|台北市|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-TPE.txt|
+|桃园市|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-TAO.txt|
+|台南市|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-TNN.txt|
+|彰化县|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-CHA.txt|
+|屏东县|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-PIF.txt|
+|云林县|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-YUN.txt|
+|苗栗县|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-MIA.txt|
+|新竹县|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-HSQ.txt|
+|嘉义县|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-CYQ.txt|
+|南投县|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-NAN.txt|
+|宜兰县|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-ILA.txt|
+|新竹市|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-HSZ.txt|
+|基隆市|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-KEE.txt|
+|花莲县|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-HUA.txt|
+|嘉义市|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-CYI.txt|
+|台东县|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-TTT.txt|
+|金门县|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-KIN.txt|
+|澎湖县|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-PEN.txt|
+|连江县|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/TW/TW-LIE.txt|
 
 |香港特别行政区|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/810000.txt|
 |---|---|
