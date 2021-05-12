@@ -6,7 +6,7 @@
 
 <h1 align="center">IP 地址库</h1>
 
-<p align="center">数据基于纯真数据库分类，更新日期 2021.05.06</p>
+<p align="center">数据基于纯真数据库分类，更新日期 2021.05.12</p>
 
 <p align=center>
 <a href="https://i-meto.com/">Author Website</a> ·
