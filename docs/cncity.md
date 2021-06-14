@@ -189,7 +189,6 @@
 |泰安市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/370900.txt|
 |威海市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/371000.txt|
 |日照市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/371100.txt|
-|*莱芜区|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/371200.txt|
 |临沂市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/371300.txt|
 |德州市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/371400.txt|
 |聊城市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/371500.txt|
