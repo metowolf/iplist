@@ -17,6 +17,8 @@
 ***
 
 ## 分类
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmetowolf%2Fiplist.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmetowolf%2Fiplist?ref=badge_shield)
+
 
 ### 国家 IP 段
 
@@ -88,3 +90,7 @@
  - 感谢 @ipdb/range 项目提供 ipdb 数据库格式的分段工具
  - 感谢 [cidr-tools](https://github.com/silverwind/cidr-tools) 项目提供可靠的 CIDR 合并工具
  - 感谢专注于 IP 数据库收集整理工作的公司和热心网友们
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmetowolf%2Fiplist.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmetowolf%2Fiplist?ref=badge_large)
