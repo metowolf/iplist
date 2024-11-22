@@ -22,7 +22,7 @@ jobs:
         run: |
           cd build
           yarn install
-          yarn add qqwry.ipdb
+          yarn add openipdb.ipdb
           yarn build
       - name: Push
         env:
