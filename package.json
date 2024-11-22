@@ -19,8 +19,8 @@
     "gulp": "^4.0.2",
     "gulp-debug": "^4.0.0",
     "ipdb": "^0.3.3",
+    "openipdb.ipdb": "^2024.11.22",
     "progress": "^2.0.3",
-    "qqwry.ipdb": "^2023.3.8",
     "yaml": "^1.10.2"
   }
 }

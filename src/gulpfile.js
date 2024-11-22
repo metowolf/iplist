@@ -6,7 +6,7 @@ const plugin_cncity = require('./plugins/cncity')
 const plugin_china = require('./plugins/china')
 const plugin_cidrmerge = require('./plugins/cidrmerge')
 
-const database = require('qqwry.ipdb')
+const database = require('openipdb.ipdb')
 
 const country = () => {
   return src(database)
