@@ -6,7 +6,7 @@
 
 <h1 align="center">IP 地址库</h1>
 
-<p align="center">数据基于纯真数据库分类</p>
+<p align="center">数据基于 OpenIPDB 分类</p>
 
 <p align=center>
 <a href="https://i-meto.com/">Author Website</a> ·
@@ -67,24 +67,12 @@
 
 |采信源|文件|
 |---|---|
-|纯真数据库|[qqwry.ipdb](https://github.com/metowolf/qqwry.ipdb)|
-|OpenIPDB 字典|-|
-
-
-## 数据准确性
-
-由于数据并非直接采集于纯真原始数据库，而是经过 [qqwry.ipdb](https://github.com/metowolf/qqwry.ipdb) 二次标准化后进行分类，所以数据难免会出现遗漏。
-如果您发现数据中存在错误的地方，以下是可供反馈的途径：
-
- 1. 直接向本项目 [发起 issue](https://github.com/metowolf/iplist/issues/new)，按照规范注明需要修改的 IP 范围、正确信息，如有信息来源建议一并填写，我会代为排查并向上游反馈。
- 2. 如果发现是 [qqwry.ipdb](https://github.com/metowolf/qqwry.ipdb) 不幸错误格式化了原始信息，请前往 [qqwry.ipdb issue](https://github.com/metowolf/qqwry.ipdb/issues/new) 进行反馈。
- 3. 如果发现是纯真数据库的数据错误，可以通过 [IP 小秘书](http://www.cz88.net/ip/) 或者 [前往纯真论坛](http://bbs.cz88.net/f26)，按照格式要求进行发帖反馈。
+|OpenIPDB|-|
 
 
 ## 致谢
 
- - **特别感谢 [纯真](http://cz88.net/) 的离线数据库，本列表数据均来源于纯真**
- - **特别感谢 [qqwry.ipdb](https://github.com/metowolf/qqwry.ipdb) 标准化项目，本列表直接采集于该数据库**
+ - **特别感谢 [OpenIPDB.ipdb](https://www.npmjs.com/package/openipdb.ipdb) 项目，本列表直接采集于该数据库**
  - 感谢 [IPIP.net](https://www.ipip.net/) 设计的 ipdb 数据库格式
  - 感谢 ipdb 项目提供 ipdb 数据库格式的读取工具
  - 感谢 @ipdb/range 项目提供 ipdb 数据库格式的分段工具
