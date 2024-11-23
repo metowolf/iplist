@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@ipdb/cac@^2019.9.10":
-  version "2019.9.10"
-  resolved "https://registry.yarnpkg.com/@ipdb/cac/-/cac-2019.9.10.tgz#ae4166fb2f6ac0265555d6f3651936e393797f73"
-  integrity sha512-vhIaNUjqEZ+U10jAo7gB4fHhG8CeylQw7hzUFzyhkPBNoZ3F7LYdrRBZU643hGf3H1g5fpdzcApXhKtgEVGM5A==
-
 "@ipdb/iso3166@^2019.7.3":
   version "2019.7.3"
   resolved "https://registry.yarnpkg.com/@ipdb/iso3166/-/iso3166-2019.7.3.tgz#903f99dc1cc4934a67b94c416913f8d063bbe8ef"

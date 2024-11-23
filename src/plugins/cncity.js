@@ -1,7 +1,7 @@
 const vinyl = require('vinyl')
 const IPDB = require('ipdb')
 const ipdb_range = require('@ipdb/range')
-const ipdb_cac = require('@ipdb/cac')
+const ipdb_cac = require('./cac')
 const ProgressBar = require('progress')
 
 const plugin = (through2, file, cb) => {
@@ -19,7 +19,7 @@ const plugin = (through2, file, cb) => {
   while (true) {
     const info = ipdb.find(ip).data
     const china_admin_code = info.china_admin_code
-    if (china_admin_code.length === 6) {
+    if (china_admin_code?.length === 6) {
       let cac = china_admin_code
       {
         cac = `${cac.substr(0, 4)}00`
