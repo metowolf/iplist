@@ -6,11 +6,6 @@ const Format = require('../format')
 
 let format = null
 
-const getCountryISO3166 = (info) => {
-  const data = format.execute([info.country, info.area].join('|'))
-  return data.iso3166_2
-}
-
 const plugin = (through2, file, cb) => {
 
   console.log('Parse ipdb')
@@ -31,7 +26,7 @@ const plugin = (through2, file, cb) => {
   let ip = '0.0.0.0'
   while (true) {
     const info = ipdb.find(ip).data
-    const iso3166_2 = getCountryISO3166(info)
+    const iso3166_2 = info.region_code
     if (iso3166_2.length > 3) {
       if (!result[iso3166_2]) {
         result[iso3166_2] = []

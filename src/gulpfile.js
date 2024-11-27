@@ -47,4 +47,4 @@ exports.country = country
 exports.city = city
 exports.cncity = cncity
 exports.china = china
-exports.build = series(country, cncity, china)
+exports.build = series(country, city, cncity, china)
