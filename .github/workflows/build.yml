@@ -29,9 +29,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd ./data
-          cp ../build/data/cncity/* ./data/cncity/
-          cp ../build/data/country/* ./data/country/
-          cp ../build/data/special/* ./data/special/
+          cp -r ../build/data/cncity/* ./data/cncity/
+          cp -r ../build/data/country/* ./data/country/
+          cp -r ../build/data/special/* ./data/special/
 
           if [ -z "$(git status --porcelain)" ]; then
             echo "No changes to the output on this push; exiting."
