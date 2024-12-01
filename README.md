@@ -65,9 +65,9 @@
 
 ## 数据来源
 
-|采信源|文件|
+|采信源|地址|
 |---|---|
-|OpenIPDB|-|
+|OpenIPDB|https://nali.city/|
 
 
 ## 致谢
