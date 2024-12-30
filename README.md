@@ -67,7 +67,7 @@
 
 |采信源|地址|
 |---|---|
-|OpenIPDB|https://nali.city/|
+|OpenIPDB|https://openipdb.org/|
 
 
 ## 致谢
