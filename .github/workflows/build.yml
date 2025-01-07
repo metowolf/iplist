@@ -3,7 +3,7 @@ name: build
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 3 * * *"
+    - cron: "2 * * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
