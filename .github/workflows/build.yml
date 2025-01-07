@@ -22,7 +22,7 @@ jobs:
         uses: s3-actions/s3cmd@v1.9.0
         with:
           provider: cloudflare
-          region: 'auth'
+          region: 'auto'
           access_key: ${{ secrets.S3_ACCESS_KEY }}
           secret_key: ${{ secrets.S3_SECRET_KEY }}
           account_id: ${{ secrets.S3_ACCOUNT_ID }}
