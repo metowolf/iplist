@@ -18,11 +18,20 @@ jobs:
         with:
           path: data
           ref: master
+      - name: Set up S3cmd cli tool
+        uses: s3-actions/s3cmd@v1.9.0
+        with:
+          provider: cloudflare
+          region: 'auth'
+          access_key: ${{ secrets.S3_ACCESS_KEY }}
+          secret_key: ${{ secrets.S3_SECRET_KEY }}
+          account_id: ${{ secrets.S3_ACCOUNT_ID }}
       - name: Parse
         run: |
+          s3cmd get s3://openipdb/openipdb.ipdb /tmp/openipdb.ipdb
+          ls -al /tmp/openipdb.ipdb
           cd build
           yarn install
-          yarn add openipdb.ipdb
           yarn build
       - name: Push
         env:
