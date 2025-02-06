@@ -1,0 +1,24 @@
+{
+  "name": "iplist",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run gulp build",
+    "gulp": "npx --max-old-space-size=8092 gulp --gulpfile src/gulpfile.js --cwd ./",
+    "test": "npm run gulp test"
+  },
+  "repository": "git@github.com:metowolf/iplist.git",
+  "author": "metowolf <i@i-meto.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@ipdb/range": "^0.1.1",
+    "cidr-tools": "^3.0.5",
+    "glob": "^7.2.3",
+    "gulp": "^4.0.2",
+    "gulp-debug": "^4.0.0",
+    "ipdb": "^0.3.3",
+    "progress": "^2.0.3",
+    "through2": "^4.0.2",
+    "yaml": "^1.10.2"
+  }
+}

@@ -8,16 +8,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Builder
-        uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
         with:
-          path: build
-          ref: build
+          version: 9
       - name: Checkout Data
         uses: actions/checkout@v4
-        with:
-          path: data
-          ref: master
       - name: Set up S3cmd cli tool
         uses: s3-actions/s3cmd@v1.9.0
         with:
@@ -26,22 +21,21 @@ jobs:
           access_key: ${{ secrets.S3_ACCESS_KEY }}
           secret_key: ${{ secrets.S3_SECRET_KEY }}
           account_id: ${{ secrets.S3_ACCOUNT_ID }}
+      - name: Set Timezone
+        uses: szenius/set-timezone@v2.0
+        with:
+          timezoneLinux: "Asia/Shanghai"
       - name: Parse
         run: |
           s3cmd get s3://openipdb/openipdb.ipdb /tmp/openipdb.ipdb
           ls -al /tmp/openipdb.ipdb
-          cd build
-          yarn install
-          yarn build
+          rm -r ./data
+          pnpm install
+          pnpm run build
       - name: Push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cd ./data
-          cp -r ../build/data/cncity/* ./data/cncity/
-          cp -r ../build/data/country/* ./data/country/
-          cp -r ../build/data/special/* ./data/special/
-
           if [ -z "$(git status --porcelain)" ]; then
             echo "No changes to the output on this push; exiting."
             exit 0
