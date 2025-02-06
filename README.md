@@ -32,13 +32,15 @@
 |日本|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/JP.txt|
 ||[ > 查看更多](https://github.com/metowolf/iplist/tree/master/docs/country.md)|
 
-### 大陆 IP 段
+### 中国内地 IP 段 🌟
 
-相比较国家 IP 段，数据经过精简合并
+由于网络审查的原因，你可能需要一份「中国内地区域的 IP 地址列表」，数据精确度可以自行多方比对，仅供参考，数据每小时更新一次。
+
+详情 https://github.com/metowolf/iplist/blob/master/docs/china.md
 
 |Country|CIDR|
 |---|---|
-|中国 (CN)|https://raw.githubusercontent.com/metowolf/iplist/master/data/special/china.txt|
+|中国内地 (CN)|https://raw.githubusercontent.com/metowolf/iplist/master/data/special/china.txt|
 
 ### 省级 IP 段
 
