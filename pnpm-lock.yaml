@@ -5,9 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@ipdb/iso3166':
-    specifier: ^2019.7.3
-    version: 2019.7.3
   '@ipdb/range':
     specifier: ^0.1.1
     version: 0.1.1
@@ -37,10 +34,6 @@ dependencies:
     version: 1.10.2
 
 packages:
-
-  /@ipdb/iso3166@2019.7.3:
-    resolution: {integrity: sha512-rlGMZS74Y4kmRBkEdR5VbVQ9gPUwdysenXa84KZigQPcV+XjjsF82wCmOqC9tbF602l290SPLXdkzvWKBfL0IA==}
-    dev: false
 
   /@ipdb/range@0.1.1:
     resolution: {integrity: sha512-AwOPDlut8uMPCxHFEpuGMRlOr+ZGexPw0mDemRrgI089n4oz1NQYA85X7Q4Ny/rN9MaP0z3Y1a1UeOFc9K9wCA==}
