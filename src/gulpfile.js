@@ -5,6 +5,7 @@ const plugin_city = require('./plugins/city')
 const plugin_cncity = require('./plugins/cncity')
 const plugin_china = require('./plugins/china')
 const plugin_cidrmerge = require('./plugins/cidrmerge')
+const plugin_isp = require('./plugins/isp')
 
 const database = '/tmp/openipdb.ipdb'
 
@@ -35,6 +36,15 @@ const cncity = () => {
     .pipe(dest('data/cncity'))
 }
 
+const isp = () => {
+  return src(database)
+    .pipe(through2.obj(function(file, _, cb) {
+      return plugin_isp(this, file, cb)
+    }))
+    .pipe(through2.obj(plugin_cidrmerge))
+    .pipe(dest('data/isp'))
+}
+
 const china = () => {
   return src('data/country/CN.txt')
     .pipe(through2.obj(function(file, _, cb) {
@@ -47,4 +57,5 @@ exports.country = country
 exports.city = city
 exports.cncity = cncity
 exports.china = china
-exports.build = series(country, city, cncity, china)
+exports.isp = isp
+exports.build = series(country, city, cncity, isp, china)

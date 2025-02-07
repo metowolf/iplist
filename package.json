@@ -15,7 +15,6 @@
     "cidr-tools": "^3.0.5",
     "glob": "^7.2.3",
     "gulp": "^4.0.2",
-    "gulp-debug": "^4.0.0",
     "ipdb": "^0.3.3",
     "progress": "^2.0.3",
     "through2": "^4.0.2",
