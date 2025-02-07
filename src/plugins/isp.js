@@ -4,14 +4,15 @@ const ipdb_range = require('@ipdb/range')
 const ProgressBar = require('progress')
 
 const ISP_MAP = {
-  // 中国电信
-  'chinatelecom.com.cn': 'chinatelecom',
-  // 中国联通
-  'chinaunicom.com': 'chinaunicom',
-  // 中国移动
-  'chinamobile.com': 'chinamobile',
-  // 中国教育网
-  'cernet.edu.cn': 'cernet',
+  // 中国运营商
+  'chinatelecom.com.cn': 'chinatelecom', // 中国电信
+  'chinaunicom.com': 'chinaunicom', // 中国联通
+  'chinamobile.com': 'chinamobile', // 中国移动
+  'cernet.edu.cn': 'cernet', // 中国教育网
+  // 常见云服务商
+  'aliyun.com': 'aliyun',
+  'tencent.com': 'tencent',
+  'cloudflare.com': 'cloudflare',
 }
 
 const plugin = (through2, file, cb) => {
