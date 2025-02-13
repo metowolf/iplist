@@ -26,10 +26,10 @@
 
 |Country|CIDR|
 |---|---|
-|中国 (CN)|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/CN.txt|
-|中国香港|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/HK.txt|
-|美国|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/US.txt|
-|日本|https://raw.githubusercontent.com/metowolf/iplist/master/data/country/JP.txt|
+|中国 (CN)|https://metowolf.github.io/iplist/data/country/CN.txt|
+|中国香港|https://metowolf.github.io/iplist/data/country/HK.txt|
+|美国|https://metowolf.github.io/iplist/data/country/US.txt|
+|日本|https://metowolf.github.io/iplist/data/country/JP.txt|
 ||[ > 查看更多](https://github.com/metowolf/iplist/tree/master/docs/country.md)|
 
 ### 中国内地 IP 段 🌟
@@ -40,7 +40,7 @@
 
 |Country|CIDR|
 |---|---|
-|中国内地 (CN)|https://raw.githubusercontent.com/metowolf/iplist/master/data/special/china.txt|
+|中国内地 (CN)|https://metowolf.github.io/iplist/data/special/china.txt|
 
 ### 省级 IP 段
 
@@ -48,9 +48,9 @@
 
 |City|CIDR|
 |---|---|
-|北京市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/110000.txt|
-|浙江省|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/330000.txt|
-|广东省|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/440000.txt|
+|北京市|https://metowolf.github.io/iplist/data/cncity/110000.txt|
+|浙江省|https://metowolf.github.io/iplist/data/cncity/330000.txt|
+|广东省|https://metowolf.github.io/iplist/data/cncity/440000.txt|
 ||[ > 查看更多](https://github.com/metowolf/iplist/tree/master/docs/cncity.md)|
 
 ### 市级 IP 段
@@ -59,11 +59,19 @@
 
 |City|CIDR|
 |---|---|
-|广东省广州市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/440100.txt|
-|广东省深圳市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/440300.txt|
-|广东省佛山市|https://raw.githubusercontent.com/metowolf/iplist/master/data/cncity/440600.txt|
+|广东省广州市|https://metowolf.github.io/iplist/data/cncity/440100.txt|
+|广东省深圳市|https://metowolf.github.io/iplist/data/cncity/440300.txt|
+|广东省佛山市|https://metowolf.github.io/iplist/data/cncity/440600.txt|
 ||[ > 查看更多](https://github.com/metowolf/iplist/tree/master/docs/cncity.md)|
 
+### 运营商 IP 段
+
+|ISP|CIDR|
+|---|---|
+|中国电信|https://metowolf.github.io/iplist/data/isp/chinatelecom.txt|
+|中国移动|https://metowolf.github.io/iplist/data/isp/chinamobile.txt|
+|中国联通|https://metowolf.github.io/iplist/data/isp/chinaunicom.txt|
+|中国教育网|https://metowolf.github.io/iplist/data/isp/cernet.txt|
 
 ## 数据来源
 

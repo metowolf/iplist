@@ -4,7 +4,7 @@
 
 |数据源|地址|
 |---|---|
-|GitHub|https://raw.githubusercontent.com/metowolf/iplist/master/data/special/china.txt|
+|GitHub|https://metowolf.github.io/iplist/data/special/china.txt|
 |jsdelivr|https://cdn.jsdelivr.net/gh/metowolf/iplist/data/special/china.txt|
 
 ## Other DataSource
