@@ -79,7 +79,7 @@
  - 感谢 [IPIP.net](https://www.ipip.net/) 设计的 ipdb 数据库格式
  - 感谢 ipdb 项目提供 ipdb 数据库格式的读取工具
  - 感谢 @ipdb/range 项目提供 ipdb 数据库格式的分段工具
- - 感谢 [cidr-tools](https://github.com/silverwind/cidr-tools) 项目提供可靠的 CIDR 合并工具
+ - 感谢 [fast-cidr-tools](https://github.com/SukkaW/fast-cidr-tools) 项目提供高效、可靠的 CIDR 合并工具
  - 感谢专注于 IP 数据库收集整理工作的公司和热心网友们
 
 

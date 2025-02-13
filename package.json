@@ -12,7 +12,7 @@
   "private": true,
   "dependencies": {
     "@ipdb/range": "^0.1.1",
-    "cidr-tools": "^3.0.5",
+    "fast-cidr-tools": "^0.3.1",
     "glob": "^7.2.3",
     "gulp": "^4.0.2",
     "ipdb": "^0.3.3",

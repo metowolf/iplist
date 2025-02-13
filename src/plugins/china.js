@@ -1,4 +1,4 @@
-const cidrTools = require('cidr-tools')
+const { merge } = require('fast-cidr-tools')
 
 const plugin = (through2, file, cb) => {
 
@@ -28,7 +28,7 @@ const plugin = (through2, file, cb) => {
 223.120.0.0/13
 `
   white = white.trim().split('\n')
-  data = cidrTools.merge([...data, ...white])
+  data = merge([...data, ...white], true)
 
   file.contents = Buffer.from(data.join('\n'))
   file.path = file.path.replace('CN.txt', 'china.txt')
