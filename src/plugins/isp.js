@@ -8,6 +8,7 @@ const ISP_MAP = {
   'chinatelecom.com.cn': 'chinatelecom', // 中国电信
   'chinaunicom.com': 'chinaunicom', // 中国联通
   'chinamobile.com': 'chinamobile', // 中国移动
+  'drpeng.com.cn': 'drpeng', // 彭博士
   'cernet.edu.cn': 'cernet', // 中国教育网
   // 常见云服务商
   'aliyun.com': 'aliyun',

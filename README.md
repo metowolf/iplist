@@ -71,6 +71,7 @@
 |中国电信|https://metowolf.github.io/iplist/data/isp/chinatelecom.txt|
 |中国移动|https://metowolf.github.io/iplist/data/isp/chinamobile.txt|
 |中国联通|https://metowolf.github.io/iplist/data/isp/chinaunicom.txt|
+|彭博士|https://metowolf.github.io/iplist/data/isp/drpeng.txt|
 |中国教育网|https://metowolf.github.io/iplist/data/isp/cernet.txt|
 
 ## 数据来源
