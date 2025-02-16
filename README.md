@@ -85,9 +85,6 @@
 
  - **特别感谢 [OpenIPDB.ipdb](https://www.npmjs.com/package/openipdb.ipdb) 项目，本列表直接采集于该数据库**
  - **特别感谢 [IPinfo](https://ipinfo.io) 提供的免费 ASN 数据用于修正**
- - 感谢 [IPIP.net](https://www.ipip.net/) 设计的 ipdb 数据库格式
- - 感谢 ipdb 项目提供 ipdb 数据库格式的读取工具
- - 感谢 @ipdb/range 项目提供 ipdb 数据库格式的分段工具
  - 感谢 [fast-cidr-tools](https://github.com/SukkaW/fast-cidr-tools) 项目提供高效、可靠的 CIDR 合并工具
  - 感谢专注于 IP 数据库收集整理工作的公司和热心网友们
 
