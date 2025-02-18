@@ -1,6 +1,2 @@
 # 构建工具
 node_modules/
-
-# 排除台湾省区划细分
-!data/cncity/710000.txt
-data/cncity/7*
