@@ -10,10 +10,15 @@ const ISP_MAP = {
   'chinamobile.com': 'chinamobile', // 中国移动
   'drpeng.com.cn': 'drpeng', // 彭博士
   'cernet.edu.cn': 'cernet', // 中国教育网
+  'cstnet.cn': 'cstnet', // 中国科技网
   // 常见云服务商
   'aliyun.com': 'aliyun',
   'tencent.com': 'tencent',
   'cloudflare.com': 'cloudflare',
+  'huawei.com': 'huawei',
+  'microsoft.com': 'microsoft',
+  'bytedance.com': 'bytedance',
+  'cloud.google.com': 'googlecloud',
 }
 
 const plugin = (through2, file, cb) => {
