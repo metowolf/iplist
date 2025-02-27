@@ -73,12 +73,25 @@
 |中国联通|https://metowolf.github.io/iplist/data/isp/chinaunicom.txt|
 |彭博士|https://metowolf.github.io/iplist/data/isp/drpeng.txt|
 |中国教育网|https://metowolf.github.io/iplist/data/isp/cernet.txt|
+|中国科技网|https://metowolf.github.io/iplist/data/isp/cstnet.txt|
+
+### 公有云厂商 IP 段
+
+|ISP|CIDR|
+|---|---|
+|阿里云|https://metowolf.github.io/iplist/data/isp/aliyun.txt|
+|腾讯云|https://metowolf.github.io/iplist/data/isp/tencent.txt|
+|字节跳动|https://metowolf.github.io/iplist/data/isp/bytedance.txt|
+|华为云|https://metowolf.github.io/iplist/data/isp/huawei.txt|
+|Google Cloud|https://metowolf.github.io/iplist/data/isp/googlecloud.txt|
 
 ## 数据来源
 
-|采信源|地址|
+|数据源|地址|
 |---|---|
 |OpenIPDB|https://openipdb.org/|
+|IPinfo|https://ipinfo.io/|
+|bgp.tools|https://bgp.tools/|
 
 
 ## 致谢
