@@ -12,12 +12,13 @@ const ISP_MAP = {
   'cernet.edu.cn': 'cernet', // 中国教育网
   'cstnet.cn': 'cstnet', // 中国科技网
   // 常见云服务商
-  'aliyun.com': 'aliyun',
-  'tencent.com': 'tencent',
+  'aliyun.com': 'aliyun', // 阿里云
+  'tencent.com': 'tencent', // 腾讯云
   'cloudflare.com': 'cloudflare',
-  'huawei.com': 'huawei',
+  'huawei.com': 'huawei', // 华为云
   'microsoft.com': 'microsoft',
-  'bytedance.com': 'bytedance',
+  'bytedance.com': 'bytedance', // 字节跳动
+  'volcengine.com': 'volcengine', // 火山引擎
   'cloud.google.com': 'googlecloud',
 }
 
