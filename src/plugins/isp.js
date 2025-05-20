@@ -19,7 +19,8 @@ const ISP_MAP = {
   'microsoft.com': 'microsoft',
   'bytedance.com': 'bytedance', // 字节跳动
   'volcengine.com': 'volcengine', // 火山引擎
-  'cloud.google.com': 'googlecloud',
+  'cloud.google.com': 'googlecloud', // Google Cloud
+  'digitalocean.com': 'digitalocean', // DigitalOcean
 }
 
 const plugin = (through2, file, cb) => {
