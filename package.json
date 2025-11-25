@@ -12,12 +12,12 @@
   "private": true,
   "dependencies": {
     "@ipdb/range": "^0.1.1",
-    "fast-cidr-tools": "^0.3.1",
-    "glob": "^7.2.3",
-    "gulp": "^4.0.2",
+    "fast-cidr-tools": "^0.3.4",
+    "glob": "^13.0.0",
+    "gulp": "^5.0.1",
     "ipdb": "^0.3.3",
     "progress": "^2.0.3",
     "through2": "^4.0.2",
-    "yaml": "^1.10.2"
+    "yaml": "^2.8.1"
   }
 }

@@ -27,7 +27,7 @@ const plugin = (through2, file, cb) => {
 
   console.log('Parse ipdb')
 
-  const ipdb = new IPDB(file.contents, {
+  const ipdb = new IPDB(file.path, {
     patches: [ipdb_range]
   })
 
