@@ -29,7 +29,7 @@ jobs:
         run: |
           s3cmd get s3://openipdb/openipdb.ipdb /tmp/openipdb.ipdb
           ls -al /tmp/openipdb.ipdb
-          rm -r ./data
+          rm -rf ./data
           pnpm install
           pnpm run build
       - name: Push
