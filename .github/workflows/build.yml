@@ -11,6 +11,11 @@ jobs:
       - uses: pnpm/action-setup@v4
         with:
           version: 9
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
       - name: Checkout Data
         uses: actions/checkout@v4
       - name: Set up S3cmd cli tool
@@ -27,15 +32,20 @@ jobs:
           timezoneLinux: "Asia/Shanghai"
       - name: Parse
         run: |
+          set -e
           s3cmd get s3://openipdb/openipdb.ipdb /tmp/openipdb.ipdb
-          ls -al /tmp/openipdb.ipdb
-          rm -r ./data
+          if [ ! -f /tmp/openipdb.ipdb ]; then
+            echo "Failed to download openipdb.ipdb"
+            exit 1
+          fi
+          rm -rf ./data
           pnpm install
           pnpm run build
       - name: Push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -e
           if [ -z "$(git status --porcelain)" ]; then
             echo "No changes to the output on this push; exiting."
             exit 0
