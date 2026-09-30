@@ -19,5 +19,10 @@
     "progress": "^2.0.3",
     "through2": "^4.0.2",
     "yaml": "^2.8.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "minimatch": "10.2.3"
+    }
   }
 }
