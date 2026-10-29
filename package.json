@@ -4,7 +4,8 @@
   "scripts": {
     "build": "npm run gulp build",
     "gulp": "npx --max-old-space-size=8092 gulp --gulpfile src/gulpfile.js --cwd ./",
-    "test": "npm run gulp test"
+    "test": "node --test test/*.test.js",
+    "bench": "node bench/merge.bench.js"
   },
   "repository": "git@github.com:metowolf/iplist.git",
   "author": "metowolf <i@i-meto.com>",
@@ -12,7 +13,6 @@
   "private": true,
   "dependencies": {
     "@ipdb/range": "^0.1.1",
-    "fast-cidr-tools": "^0.3.4",
     "glob": "^13.0.0",
     "gulp": "^5.0.1",
     "ipdb": "^0.3.3",

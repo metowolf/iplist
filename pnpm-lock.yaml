@@ -11,9 +11,6 @@ importers:
       '@ipdb/range':
         specifier: ^0.1.1
         version: 0.1.1
-      fast-cidr-tools:
-        specifier: ^0.3.4
-        version: 0.3.4
       glob:
         specifier: ^13.0.0
         version: 13.0.0
@@ -176,16 +173,6 @@ packages:
   extend@3.0.2:
     resolution: {integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==}
 
-  fast-cidr-tools@0.3.4:
-    resolution: {integrity: sha512-WQNW+ynysAsI+O3YX2269Ff1wx6+xTyKrtLPN0TaZOf5ZZfFNPS59J0vmCrJbpno5z3vJ5sX4wUHpJL7avuHLg==}
-    engines: {node: '>=16'}
-
-  fast-escape-html@1.1.0:
-    resolution: {integrity: sha512-nRvjfywv8gzIBs0fM/ht6S5scNUamm+o+91p/69cYYNWODb7b/UiQfjFx+6n8NMtdHs6K80kh+hW1dPNS/opIA==}
-
-  fast-escape-regexp@1.0.1:
-    resolution: {integrity: sha512-VSnAgWEYHdyyVegVfN/TUCa6hDQ7PIxdIJVWq4RWqyegkG9zFwNb21uykT0hAyvKlKnFR+zOu/25434pHBXtLA==}
-
   fast-fifo@1.3.2:
     resolution: {integrity: sha512-/d9sfos4yxzpwkDkuN7k2SqFKtYNmCTzgfEpz82x34IM9/zc8KGxQoXg1liNC/izpRM/MBdt44Nmx41ZWqk+FQ==}
 
@@ -222,9 +209,6 @@ packages:
   for-own@1.0.0:
     resolution: {integrity: sha512-0OABksIGrxKK8K4kynWkQ7y1zounQxP+CWnyclVwj81KW3vlLlGUx57DKGcP/LH216GzqnstnPocF16Nxs0Ycg==}
     engines: {node: '>=0.10.0'}
-
-  foxts@4.6.0:
-    resolution: {integrity: sha512-Sq6k7CDUAz1/MOiwRiV59tblzsaWGOQitYxvF/l7H5Z/9gZNBvWKWsRcXLS7T7FLKRKO0LmETiefkVUm5omESg==}
 
   fs-mkdirp-stream@2.0.1:
     resolution: {integrity: sha512-UTOY+59K6IA94tec8Wjqm0FSh5OVudGNB0NL/P6fB3HiE3bYOY3VYBGijsnOHNkQSwC1FKkU77pmq7xp9CskLw==}
@@ -781,14 +765,6 @@ snapshots:
 
   extend@3.0.2: {}
 
-  fast-cidr-tools@0.3.4:
-    dependencies:
-      foxts: 4.6.0
-
-  fast-escape-html@1.1.0: {}
-
-  fast-escape-regexp@1.0.1: {}
-
   fast-fifo@1.3.2: {}
 
   fast-levenshtein@3.0.0:
@@ -827,11 +803,6 @@ snapshots:
   for-own@1.0.0:
     dependencies:
       for-in: 1.0.2
-
-  foxts@4.6.0:
-    dependencies:
-      fast-escape-html: 1.1.0
-      fast-escape-regexp: 1.0.1
 
   fs-mkdirp-stream@2.0.1:
     dependencies:

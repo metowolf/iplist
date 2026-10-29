@@ -1,4 +1,4 @@
-const { merge } = require('fast-cidr-tools')
+const { merge } = require('../lib/cidr')
 
 const plugin = (through2, file, cb) => {
 

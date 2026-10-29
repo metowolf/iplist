@@ -1,4 +1,4 @@
-const { merge } = require('fast-cidr-tools')
+const { merge } = require('../lib/cidr')
 const through2 = require('through2')
 const vinyl = require('vinyl')
 const path = require('path')
