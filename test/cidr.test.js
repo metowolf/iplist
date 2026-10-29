@@ -79,6 +79,28 @@ test('edge cases IPv4', () => {
   check([])
 })
 
+test('IPv4 bit masks cover every prefix and unsigned boundary', () => {
+  for (let prefix = 0; prefix <= 32; prefix++) {
+    for (const ip of ['0.0.0.0', '0.0.0.1', '127.255.255.255', '128.0.0.0', '255.255.255.255']) {
+      check([`${ip}/${prefix}`])
+    }
+  }
+})
+
+test('IPv4 ordering detection uses normalized packed keys across IPv6 entries', () => {
+  const inputs = [
+    ['10.0.0.255/24', '10.0.0.1/32', '10.0.0.1/32', '10.0.2.0/24'],
+    ['10.0.0.1/32', '10.0.0.255/24', '10.0.2.0/24'],
+    ['255.255.255.255', '128.0.0.0/1', '0.0.0.0/1'],
+    ['0.0.0.1', '::1', '0.0.0.2', '::2'],
+    ['0.0.0.2', '::1', '0.0.0.1', '::2']
+  ]
+  for (const input of inputs) {
+    check(input, true)
+    check(input, false)
+  }
+})
+
 test('edge cases IPv6 and mixed', () => {
   check(['::/0'])
   check(['::1', '::'])

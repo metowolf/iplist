@@ -46,7 +46,7 @@ function parseV4Packed (s) {
       if (++digits > 3) return bad(s)
     } else if (c === 46) { // '.'
       if (digits === 0 || octet > 255 || ++dots > 3) return bad(s)
-      ip = ip * 256 + octet
+      ip = (ip << 8) | octet
       octet = 0
       digits = 0
     } else if (c === 47) { // '/'
@@ -58,7 +58,7 @@ function parseV4Packed (s) {
     }
   }
   if (digits === 0 || octet > 255 || dots !== 3) return bad(s)
-  ip = ip * 256 + octet
+  ip = (ip << 8) | octet
 
   let prefix = 32
   if (i < len) {
@@ -74,7 +74,9 @@ function parseV4Packed (s) {
     if (prefix > 32) return bad(s)
   }
   const hb = 32 - prefix
-  const start = ip - (ip % POW2[hb])
+  const ip32 = ip >>> 0
+  // JS masks shift counts to five bits, so /0 needs an explicit case.
+  const start = hb === 32 ? 0 : ((ip32 >>> hb) << hb) >>> 0
   return start * 64 + hb
 }
 
@@ -95,20 +97,21 @@ function emitV4 (s, e, out, starts) {
   }
 }
 
-function mergeV4 (keys, count, out, starts) {
+function mergeV4 (keys, count, out, starts, ordered) {
   if (count === 0) return
   const sorted = count === keys.length ? keys : keys.subarray(0, count)
-  sorted.sort()
+  // Project data files are already ordered by normalized packed key.
+  if (!ordered) sorted.sort()
 
   let k = sorted[0]
-  let hb = k % 64
-  let curS = (k - hb) / 64
+  let curS = Math.floor(k / 64)
+  let hb = k - curS * 64
   let curE = curS + POW2[hb] - 1
 
   for (let i = 1; i < count; i++) {
     k = sorted[i]
-    hb = k % 64
-    const s = (k - hb) / 64
+    const s = Math.floor(k / 64)
+    hb = k - s * 64
     if (s > curE + 1) {
       emitV4(curS, curE, out, starts)
       curS = s
@@ -221,7 +224,7 @@ function emitV6 (s, e, out, starts) {
     const hbAlign = s === 0n ? 128 : bitLength(s & -s) - 1
     const hb = hbLen < hbAlign ? hbLen : hbAlign
     out.push(v6ToString(s, 128 - hb))
-    starts.push(s)
+    if (starts !== null) starts.push(s)
     s += 1n << BigInt(hb)
   }
 }
@@ -255,6 +258,8 @@ function merge (cidrs, sort = false) {
   const len = cidrs.length
   const keys = new Float64Array(len)
   let count = 0
+  let ordered = true
+  let previous = -1
   let v6 = null
 
   for (let i = 0; i < len; i++) {
@@ -264,20 +269,24 @@ function merge (cidrs, sort = false) {
       if (v6 === null) v6 = []
       v6.push(parseV6(c))
     } else {
+      if (k < previous) ordered = false
+      previous = k
       keys[count++] = k
     }
   }
 
   const out4 = []
   if (v6 === null) {
-    mergeV4(keys, count, out4, null)
+    mergeV4(keys, count, out4, null, ordered)
     return out4
   }
 
-  const starts4 = []
+  // Start arrays are only needed to interleave the two address families.
+  const trackStarts = sort && count !== 0
+  const starts4 = trackStarts ? [] : null
   const out6 = []
-  const starts6 = []
-  mergeV4(keys, count, out4, starts4)
+  const starts6 = trackStarts ? [] : null
+  mergeV4(keys, count, out4, starts4, ordered)
   mergeV6(v6, out6, starts6)
 
   if (!sort || out4.length === 0 || out6.length === 0) return out4.concat(out6)
