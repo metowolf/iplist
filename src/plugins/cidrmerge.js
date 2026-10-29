@@ -1,4 +1,4 @@
-const { merge } = require('fast-cidr-tools')
+const { merge } = require('../lib/cidr')
 
 const plugin = (file, _, cb) => {
   let cidrs = file.contents.toString().split('\n')
